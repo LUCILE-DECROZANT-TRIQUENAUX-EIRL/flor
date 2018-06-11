@@ -18,6 +18,27 @@
         {% block javascripts %}{% endblock %}
     </head>
     <body>
+        <!-- Barre de navigation du top -->
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top-menu" aria-expanded="false">
+                        <span class="sr-only">Ouvrir le menu</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/" title="Accueil"><span class="glyphicon glyphicon-home"></span></a>
+                </div>
+                <!-- Contenu des menus de la barre de navigation -->
+                <div class="collapse navbar-collapse" id="top-menu">
+                    <ul class="nav navbar-nav">
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    </ul>
+                </div>
+            </div>
+        </nav>
         {% block body %}{% endblock %}
     </body>
 </html>
