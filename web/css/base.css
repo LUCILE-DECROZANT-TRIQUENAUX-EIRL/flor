@@ -1,0 +1,429 @@
+/* -------------------------------------- */
+/* Ajout de toutes les fontes du site web */
+/* -------------------------------------- */
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSans.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSans.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSans.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSans.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSans.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSans-Bold.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Bold.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Bold.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Bold.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+    font-stretch: condensed;
+}
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Bold.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Bold.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Bold.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Bold.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Bold.svg') format('svg');
+	font-weight: bold;
+	font-style: normal;
+    font-stretch: condensed;
+}
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-BoldOblique.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-BoldOblique.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-BoldOblique.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-BoldOblique.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-BoldOblique.svg') format('svg');
+	font-weight: bold;
+	font-style: italic;
+    font-stretch: condensed;
+}
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Oblique.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Oblique.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Oblique.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Oblique.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSansCondensed-Oblique.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+    font-stretch: condensed;
+}
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSans-ExtraLight.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSans-ExtraLight.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSans-ExtraLight.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSans-ExtraLight.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSans-ExtraLight.svg') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+	font-family: 'DejaVu Sans';
+	src: url('../fonts/dejavu-sans/DejaVuSans-Oblique.eot');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Oblique.woff') format('woff');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Oblique.woff2') format('woff2');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Oblique.ttf') format('truetype');
+	src: url('../fonts/dejavu-sans/DejaVuSans-Oblique.svg') format('svg');
+	font-weight: normal;
+	font-style: italic;
+    font-stretch: normal;
+}
+
+/* ------------------------------------ */
+/* Mise en place des fontes sur le site */
+/* ------------------------------------ */
+* {
+    font-family: 'DejaVu Sans', sans-serif;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Positionnement du footer en bas de la page quand le contenu n'en occupe pas 100% */
+/* -------------------------------------------------------------------------------- */
+html {
+    position:relative;
+    min-height:100%;
+}
+
+/* Laisse de la place pour éviter que les barres de navigation ne cachent le contenu */
+body {
+    padding-top:70px;
+    margin-bottom:70px;
+}
+
+.footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:50px;
+}
+
+/* ----------------- */
+/* Formate le footer */
+/* ----------------- */
+.navbar-bottom {
+    margin-bottom:0;
+    text-align:center;
+}
+
+.navbar-bottom .navbar-text {
+    display:inline-block;
+    float:none;
+    vertical-align:top;
+    margin:15px 25px;
+}
+
+.navbar-bottom .glyphicon {
+    color:#888;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Met en place la classe utilitaire .spacer à appliquer pour espacer un contenu de celui du dessus */
+/* ------------------------------------------------------------------------------------------------ */
+.spacer-small {
+    margin-top:20px;
+}
+
+.spacer,
+.spacer-default {
+    margin-top:40px;
+}
+
+.spacer-large {
+    margin-top:60px;
+}
+
+/* ---------------------------------- */
+/* Formate la barre de navigation top */
+/* ---------------------------------- */
+.navbar-default .navbar-nav > .disabled > a,
+.navbar-default .navbar-nav > .disabled > a:focus,
+.navbar-default .navbar-nav > .disabled > a:hover {
+    color: #7a8288;
+}
+
+/* -------------------------------------------- */
+/* Met les tooltips de couleur -info par défaut */
+/* -------------------------------------------- */
+.tooltip > .tooltip-inner {
+    background-color: #4EBABA;
+}
+.tooltip.top > .tooltip-arrow {
+    border-top-color: #4EBABA;
+}
+.tooltip.bottom > .tooltip-arrow {
+    border-bottom-color: #4EBABA;
+}
+.tooltip.left > .tooltip-arrow {
+    border-left-color: #4EBABA;
+}
+.tooltip.right > .tooltip-arrow {
+    border-right-color: #4EBABA;
+}
+/* ----------------------------------------------------------------------- */
+/* Met les couleurs des tooltip en accord avec la charte graphique du site */
+/* ----------------------------------------------------------------------- */
+.tooltip.danger > .tooltip-inner {
+    background-color: #F14B4B;
+}
+.tooltip.danger.top > .tooltip-arrow {
+    border-top-color: #F14B4B;
+}
+.tooltip.danger.bottom > .tooltip-arrow {
+    border-bottom-color: #F14B4B;
+}
+.tooltip.danger.left > .tooltip-arrow {
+    border-left-color: #F14B4B;
+}
+.tooltip.danger.right > .tooltip-arrow {
+    border-right-color: #F14B4B;
+}
+
+.tooltip.warning > .tooltip-inner {
+    background-color: #F1974B;
+}
+.tooltip.warning.top > .tooltip-arrow {
+    border-top-color: #F1974B;
+}
+.tooltip.warning.bottom > .tooltip-arrow {
+    border-bottom-color: #F1974B;
+}
+.tooltip.warning.left > .tooltip-arrow {
+    border-left-color: #F1974B;
+}
+.tooltip.warning.right > .tooltip-arrow {
+    border-right-color: #F1974B;
+}
+
+.tooltip.success > .tooltip-inner {
+    background-color: #42B142;
+}
+.tooltip.success.top > .tooltip-arrow {
+    border-top-color: #42B142;
+}
+.tooltip.success.bottom > .tooltip-arrow {
+    border-bottom-color: #42B142;
+}
+.tooltip.success.left > .tooltip-arrow {
+    border-left-color: #42B142;
+}
+.tooltip.success.right > .tooltip-arrow {
+    border-right-color: #42B142;
+}
+
+.tooltip.info > .tooltip-inner {
+    background-color: #3C9999;
+}
+.tooltip.info.top > .tooltip-arrow {
+    border-top-color: #3C9999;
+}
+.tooltip.info.bottom > .tooltip-arrow {
+    border-bottom-color: #3C9999;
+}
+.tooltip.info.left > .tooltip-arrow {
+    border-left-color: #3C9999;
+}
+.tooltip.info.right > .tooltip-arrow {
+    border-right-color: #3C9999;
+}
+
+.tooltip.primary > .tooltip-inner {
+    background-color: #62686D;
+}
+.tooltip.primary.top > .tooltip-arrow {
+    border-top-color: #62686D;
+}
+.tooltip.primary.bottom > .tooltip-arrow {
+    border-bottom-color: #62686D;
+}
+.tooltip.primary.left > .tooltip-arrow {
+    border-left-color: #62686D;
+}
+.tooltip.primary.right > .tooltip-arrow {
+    border-right-color: #62686D;
+}
+
+.tooltip.default > .tooltip-inner {
+    background-color: #232628;
+}
+.tooltip.default.top > .tooltip-arrow {
+    border-top-color: #232628;
+}
+.tooltip.default.bottom > .tooltip-arrow {
+    border-bottom-color: #232628;
+}
+.tooltip.default.left > .tooltip-arrow {
+    border-left-color: #232628;
+}
+.tooltip.default.right > .tooltip-arrow {
+    border-right-color: #232628;
+}
+
+/* ------------------------ */
+/* Formate le menu vertical */
+/* ------------------------ */
+#menu-vertical {
+    border-right: 1px solid #7a8288;
+}
+#menu-vertical .btn-creation {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 4px;
+    padding: 10px 15px;
+}
+
+#menu-vertical .btn-creation:hover {
+    text-decoration: none;
+}
+
+#menu-vertical .btn-creation > span {
+    margin-right: 15px;
+}
+
+#menu-vertical .vertical-menu {
+    margin-top: 20px;
+}
+
+#menu-vertical .vertical-menu > li {
+    margin: 0px;
+    border: 1px solid #363A3F;
+}
+
+#menu-vertical .vertical-menu > li > a {
+    border-radius: 0px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border: none;
+}
+
+#menu-vertical .vertical-menu > li > a > span {
+    margin-right: 15px;
+}
+
+#menu-vertical .vertical-menu > li:not(:last-child) {
+    border-bottom: none;
+}
+
+/* ---------------------------------------- */
+/* Formatte le contenu principal de la page */
+/* ---------------------------------------- */
+.contenu {
+    
+}
+
+/* --------------------- */
+/* Formatte les tableaux */
+/* --------------------- */
+.table {
+    table-layout: fixed;
+}
+
+.table > tbody > tr > th,
+.table > tbody > tr > td,
+.table > tfoot > tr > th,
+.table > tfoot > tr > td,
+.table > thead > tr > th,
+.table > thead > tr > td {
+    vertical-align: middle;
+}
+
+.table > tbody > tr > th.table-text-center,
+.table > tbody > tr > td.table-text-center,
+.table > tfoot > tr > th.table-text-center,
+.table > tfoot > tr > td.table-text-center,
+.table > thead > tr > th.table-text-center,
+.table > thead > tr > td.table-text-center,
+.table > tbody > tr.table-text-center > th,
+.table > tbody > tr.table-text-center > td,
+.table > tfoot > tr.table-text-center > th,
+.table > tfoot > tr.table-text-center > td,
+.table > thead > tr.table-text-center > th,
+.table > thead > tr.table-text-center > td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table > tbody > tr > td.table-ellipsis,
+.table > tbody > tr > th.table-ellipsis,
+.table > tfoot > tr > td.table-ellipsis,
+.table > tfoot > tr > th.table-ellipsis,
+.table > thead > tr > td.table-ellipsis,
+.table > thead > tr > th.table-ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.table > tbody > tr > td.table-id,
+.table > tbody > tr > th.table-id,
+.table > tfoot > tr > td.table-id,
+.table > tfoot > tr > th.table-id,
+.table > thead > tr > td.table-id,
+.table > thead > tr > th.table-id {
+    width: 40px;
+}
+
+.table > tbody > tr > td.table-action,
+.table > tbody > tr > th.table-action,
+.table > tfoot > tr > td.table-action,
+.table > tfoot > tr > th.table-action,
+.table > thead > tr > td.table-action,
+.table > thead > tr > th.table-action {
+    width: 50px;
+}
+
+.table > tbody > tr > td.table-date,
+.table > tbody > tr > th.table-date,
+.table > tfoot > tr > td.table-date,
+.table > tfoot > tr > th.table-date,
+.table > thead > tr > td.table-date,
+.table > thead > tr > th.table-date {
+    text-align: center;
+    width: 105px;
+}
+
+.table > tbody > tr > td.table-icon,
+.table > tbody > tr > th.table-icon,
+.table > tfoot > tr > td.table-icon,
+.table > tfoot > tr > th.table-icon,
+.table > thead > tr > td.table-icon,
+.table > thead > tr > th.table-icon {
+    text-align: center;
+}
+
+.table > tbody > tr > td > span.minus,
+.table > tbody > tr > th > span.minus,
+.table > tfoot > tr > td > span.minus,
+.table > tfoot > tr > th > span.minus,
+.table > thead > tr > td > span.minus,
+.table > thead > tr > th > span.minus {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+}
