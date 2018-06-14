@@ -1,9 +1,10 @@
 <?php
+
 namespace AppBundle\Entity;
+
 use Doctrine\ORM\Mapping as ORM;
-use Doctrine\ORM\Mapping\ManyToOne;
-use Doctrine\ORM\Mapping\JoinColumn;
 use Symfony\Component\Security\Core\User\UserInterface;
+
 /**
  * Utilisateur
  *
@@ -12,6 +13,7 @@ use Symfony\Component\Security\Core\User\UserInterface;
  */
 class Utilisateur implements UserInterface
 {
+
     /**
      * @var int
      *
@@ -20,12 +22,14 @@ class Utilisateur implements UserInterface
      * @ORM\GeneratedValue(strategy="AUTO")
      */
     private $id;
+
     /**
      * @var string
      *
      * @ORM\Column(name="username", type="string", length=255, unique=true)
      */
     private $username;
+
     /**
      * @var string
      *
@@ -33,12 +37,13 @@ class Utilisateur implements UserInterface
      */
     private $password;
 
-     /**
+    /**
      * @var string
      *
      * @ORM\Column(name="role", type="string", length=255)
      */
     private $role;
+
     /**
      * Get id
      *
@@ -48,6 +53,7 @@ class Utilisateur implements UserInterface
     {
         return $this->id;
     }
+
     /**
      * Set username
      *
@@ -60,6 +66,7 @@ class Utilisateur implements UserInterface
         $this->username = $username;
         return $this;
     }
+
     /**
      * Get username
      *
@@ -69,6 +76,7 @@ class Utilisateur implements UserInterface
     {
         return $this->username;
     }
+
     /**
      * Set password
      *
@@ -81,6 +89,7 @@ class Utilisateur implements UserInterface
         $this->password = $password;
         return $this;
     }
+
     /**
      * Get password
      *
@@ -96,31 +105,40 @@ class Utilisateur implements UserInterface
      *
      * @return String
      */
-    public function getRole() {
+    public function getRole()
+    {
         return $this->role;
     }
+
     /**
      * Set role
      *
      * @param String $role
      */
-    public function setRole($role) {
+    public function setRole($role)
+    {
         $this->role = $role;
     }
 
-    public function eraseCredentials() {
-
+    public function eraseCredentials()
+    {
+        
     }
+
     /**
      * Return a string array containing the role list
      *
      * @return string[]
      */
-    public function getRoles() {
+    public function getRoles()
+    {
         $roles[] = $this->getRole();
         return $roles;
     }
-    public function getSalt() {
 
+    public function getSalt()
+    {
+        
     }
+
 }
